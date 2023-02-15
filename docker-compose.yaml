@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  trialtask:
+    build: app
+    image: nikita/trial-task
+    container_name: trial-task
+    ports:
+      - "7777:8080"
+    restart: always
